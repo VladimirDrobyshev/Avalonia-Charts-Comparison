@@ -24,9 +24,8 @@ Secondary Axes      |      +      |             |         |           |
 Logariphmic scale   |      +      |             |         |           |
 Zoom/Scroll by axis |      -      |             |         |           |
 Constant Lines      |      -      |             |         |           | Можно заменить обычной Line серией
-Zoom/Scroll by axis |      -      |             |         |           |
 Empty Points        |      +      |             |         |           |
-ToolTips            |      -      |             |         |           |
+ToolTips            |      +      |             |         |           |
 Crosshair           |      -      |             |         |           | Тултип на максималках (не нужно точного попадания)
 
 ### Polar Chart
@@ -34,9 +33,9 @@ Crosshair           |      -      |             |         |           | Тулт
 Features             | LiveCharts2 | Microcharts | OxyPlot | ScottPlot | Comment
 :------------------- | :---------: | :---------: | :-----: | :-------: | :------
 Scatter Line         |      -      |             |         |           |
-Scrolling/Zooming    |             |             |         |           |
-ToolTips             |             |             |         |           |
-Crosshair            |             |             |         |           |
+Scrolling/Zooming    |      -      |             |         |           |
+ToolTips             |      +      |             |         |           |
+Crosshair            |      -      |             |         |           |
 
 ### Smith Chart
 
@@ -48,6 +47,6 @@ Smith Chart         |      -      |             |         |           |
 
 Features                       | LiveCharts2 | Microcharts | OxyPlot | ScottPlot | Comment
 :----------------------------- | :---------: | :---------: | :-----: | :-------: | :------
-4 cartesian lines - 1M each    |      -      |             |         |           |
-100 cartesian lines - 10K each | very bad    |             |         |           |
-100 polar lines - 10K each     |             |             |         |           |
+4 cartesian lines - 100K each  | Not Usable  |             |         |           |
+100 cartesian lines - 1K each  | Not Usable  |             |         |           |
+100 polar lines - 1K each      | Not Usable  |             |         |           |
