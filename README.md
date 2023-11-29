@@ -48,6 +48,6 @@ Smith Chart         |      -      |             |         |           |
 
 Features                       | LiveCharts2 | Microcharts | OxyPlot | ScottPlot | Comment
 :----------------------------- | :---------: | :---------: | :-----: | :-------: | :------
-4 cartesian lines - 1M each    |             |             |         |           |
-100 cartesian lines - 10K each |             |             |         |           |
+4 cartesian lines - 1M each    |      -      |             |         |           |
+100 cartesian lines - 10K each | very bad    |             |         |           |
 100 polar lines - 10K each     |             |             |         |           |
