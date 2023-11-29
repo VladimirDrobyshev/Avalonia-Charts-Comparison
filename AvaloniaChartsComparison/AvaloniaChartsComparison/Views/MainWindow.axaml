@@ -1,13 +1,11 @@
 <Window xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:AvaloniaChartsComparison.ViewModels"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AvaloniaChartsComparison.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
-        Title="AvaloniaChartsComparison">
+        Title="AvaloniaChartsComparison"
+        x:CompileBindings="True">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
@@ -15,6 +13,15 @@
         <vm:MainWindowViewModel/>
     </Design.DataContext>
 
-    <TextBlock Text="{Binding Greeting}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+    <Grid ColumnDefinitions="* Auto" Margin="8">
+        <TransitioningContentControl Grid.Column="0" Margin="8" Content="{Binding ChartView}" />
+        
+        <StackPanel Grid.Column="1" Orientation="Vertical">
+            <RadioButton Margin="8" Content="LiveCharts2" Command="{Binding LiveChartsCommand}" />
+            <RadioButton Margin="8" Content="Microcharts" Command="{Binding MicrochartsCommand}" />
+            <RadioButton Margin="8" Content="OxyPlot" Command="{Binding OxyPlotCommand}" />
+            <RadioButton Margin="8" Content="ScottPlot" Command="{Binding ScottPlotCommand}" />
+        </StackPanel>
+    </Grid>
 
 </Window>
