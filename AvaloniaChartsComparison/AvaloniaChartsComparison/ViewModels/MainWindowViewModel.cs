@@ -1,4 +1,5 @@
 ﻿using System;
+using AvaloniaChartsComparison.Models;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
@@ -6,10 +7,12 @@ namespace AvaloniaChartsComparison.ViewModels;
 
 public partial class MainWindowViewModel : ViewModelBase
 {
-    private readonly Lazy<LiveChartsViewModel> liveChartsViewModel = new (() => new LiveChartsViewModel());
-    private readonly Lazy<MicrochartsViewModel> microchartsViewModel = new (() => new MicrochartsViewModel());
-    private readonly Lazy<OxyPlotViewModel> oxyPlotViewModel = new (() => new OxyPlotViewModel());
-    private readonly Lazy<ScottPlotViewModel> scottPlotViewModel = new (() => new ScottPlotViewModel());
+    private static readonly DataGenerator dataGenerator = new();
+    
+    private readonly Lazy<LiveChartsViewModel> liveChartsViewModel = new (() => new LiveChartsViewModel(dataGenerator));
+    private readonly Lazy<MicrochartsViewModel> microchartsViewModel = new (() => new MicrochartsViewModel(dataGenerator));
+    private readonly Lazy<OxyPlotViewModel> oxyPlotViewModel = new (() => new OxyPlotViewModel(dataGenerator));
+    private readonly Lazy<ScottPlotViewModel> scottPlotViewModel = new (() => new ScottPlotViewModel(dataGenerator));
     
     [ObservableProperty]
     private ChartViewModelBase chartView;

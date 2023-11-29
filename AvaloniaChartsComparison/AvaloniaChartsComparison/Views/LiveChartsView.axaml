@@ -1,5 +1,19 @@
 ﻿<UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             x:Class="AvaloniaChartsComparison.Views.LiveChartsView">
-    LiveCharts2
+             xmlns:vm="using:AvaloniaChartsComparison.ViewModels"
+             xmlns:lvc="using:LiveChartsCore.SkiaSharpView.Avalonia"
+             x:Class="AvaloniaChartsComparison.Views.LiveChartsView"
+             x:DataType="vm:LiveChartsViewModel">
+    
+    <TabControl>
+        <TabItem Header="Large Points Count">
+            <lvc:CartesianChart Series="{Binding LargeSeries}" ZoomMode="Both" EasingFunction="{x:Null}" />
+        </TabItem>
+        <TabItem Header="Large Series Count">
+            <lvc:CartesianChart Series="{Binding LargePoints}" ZoomMode="Y" YAxes="{Binding LargePointsAxes}" EasingFunction="{x:Null}" />
+        </TabItem>
+        <TabItem Header="Polar">
+            <lvc:PolarChart Series="{Binding PolarSeries}" EasingFunction="{x:Null}" />
+        </TabItem>
+    </TabControl>
 </UserControl>
