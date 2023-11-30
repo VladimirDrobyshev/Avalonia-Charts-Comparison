@@ -2,10 +2,10 @@
 Comparison of open source charts for Avalonia.
 
 ## Chart Controls
-* LiveCharts2 https://github.com/beto-rodriguez/LiveCharts2
-* Microcharts https://github.com/AvaloniaCommunity/Avalonia.Microcharts
-* OxyPlot https://github.com/oxyplot/oxyplot-avalonia
-* ScottPlot https://github.com/ScottPlot/ScottPlot
+* [LiveCharts2](https://github.com/beto-rodriguez/LiveCharts2) - Презентационные чарты, много анимаций, мало фич, не предназначены для работы с большими данными. Blazor-like API.
+* [Microcharts](https://github.com/AvaloniaCommunity/Avalonia.Microcharts)
+* [OxyPlot](https://github.com/oxyplot/oxyplot-avalonia)
+* [ScottPlot](https://github.com/ScottPlot/ScottPlot)
 
 ## Comparison
 
