@@ -1,5 +1,6 @@
 # Avalonia-Charts-Comparison
 Comparison of open source charts for Avalonia.
+All charts have MIT license
 
 ## Chart Controls
 * [LiveCharts2](https://github.com/beto-rodriguez/LiveCharts2) - Презентационные чарты, много анимаций, мало фич, не предназначены для работы с большими данными. Blazor-like API.
