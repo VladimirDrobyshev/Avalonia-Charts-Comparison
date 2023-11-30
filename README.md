@@ -63,11 +63,11 @@ Smith Chart         |      -      |      -      |    -    |     -     |    -
 
 # Performance
 
-Features                       | LiveCharts2 | Microcharts | OxyPlot | ScottPlot | TeeChart
-:----------------------------- | :---------: | :---------: | :-----: | :-------: | :------
-4 cartesian lines - 100K each  | Not Usable  |     -       | Bad     | Excellent | Not Usable
-100 cartesian lines - 1K each  | Not Usable  |     -       | Normal  | Normal    | Not Usable
-100 polar lines - 1K each      | Not Usable  |     -       | Normal  | Normal    | -
+Features                       | LiveCharts2 | Microcharts | OxyPlot   | ScottPlot | TeeChart
+:----------------------------- | :---------: | :---------: | :-------: | :-------: | :------
+4 cartesian lines - 100K each  | Not Usable  |     -       | Very Slow | Very Fast | Not Usable
+100 cartesian lines - 1K each  | Not Usable  |     -       | Slow      | Slow      | Not Usable
+100 polar lines - 1K each      | Not Usable  |     -       | Normal    | Slow      | -
 
 # Conclusion
 
