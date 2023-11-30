@@ -23,6 +23,7 @@
         <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.2" />
         <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
         <PackageReference Include="LiveChartsCore.SkiaSharpView.Avalonia" Version="2.0.0-rc2" />
+        <PackageReference Include="OxyPlot.Avalonia" Version="2.1.0-Avalonia11" />
     </ItemGroup>
 
 

@@ -15,6 +15,7 @@ public class DataGenerator
     public double[][] LargeXYSeriesValues { get; } = new double[LargeSeriesCount][];
     public double[][] SmallXYSeriesValues { get; } = new double[SmallSeriesCount][];
     public double[][] PolarSeriesValues { get; } = new double[SmallSeriesCount][];
+    public double[] PolarSeriesArguments { get; } = new double[SmallSeriesPointsCount];
 
     public DataGenerator()
     {
@@ -25,10 +26,10 @@ public class DataGenerator
             SmallXYSeriesValues[i] = GenerateSinus(SmallSeriesPointsCount);
         
         for (int i = 0; i < SmallSeriesCount; i++)
-            PolarSeriesValues[i] = GenerateSpiral(SmallSeriesPointsCount);
+            PolarSeriesValues[i] = GenerateSpiral(SmallSeriesPointsCount, i);
     }
 
-    private static double[] GenerateSpiral(int count)
+    private double[] GenerateSpiral(int count, double start)
     {
         const double minAngleDegree = 0;
         const double maxAngleDegree = 720;
@@ -39,11 +40,11 @@ public class DataGenerator
         double angleStep = (maxAngle - minAngle) / count;
         for (int i = 0; i < count; i++)
         {
-            double angle = minAngle + i * angleStep;
+            double angle = start + i * angleStep;
             double angleRadians = ToRadian(angle);
-            double distance = angleRadians;
+            PolarSeriesArguments[i] = angleRadians + random.NextDouble() - 0.5;
             double normalAngle = NormalizeAngle(angle);
-            result[i] = normalAngle; // distance;
+            result[i] = normalAngle;
         }
 
         return result;
