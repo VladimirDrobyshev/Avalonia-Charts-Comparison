@@ -7,7 +7,7 @@ Comparison of open source charts for Avalonia.
 
 * [LiveCharts2](https://github.com/beto-rodriguez/LiveCharts2) - Презентационные чарты, много анимаций, мало фич, не предназначены для работы с большими данными. Blazor-like API. Skia based.
 * [Microcharts](https://github.com/AvaloniaCommunity/Avalonia.Microcharts) Нет nuget пакета, порт под Avalonia выглядит заброшенным: Net Core 3, Avalonia 10. В целом не работоспособен.
-* [OxyPlot](https://github.com/oxyplot/oxyplot-avalonia) Богатый функционал, неплохая производительность для одиночной серии.
+* [OxyPlot](https://github.com/oxyplot/oxyplot-avalonia) Богатый функционал, неплохая производительность для одиночной серии. Дока старая, примеров много.
 * [ScottPlot](https://github.com/ScottPlot/ScottPlot)
 
 > All charts have MIT license
