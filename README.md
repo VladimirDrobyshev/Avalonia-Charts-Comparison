@@ -1,5 +1,5 @@
 # Avalonia-Charts-Comparison
-Comparison of open source charts for Avalonia.
+Comparison of chart controls for Avalonia.
 
 ## Chart Controls
 
