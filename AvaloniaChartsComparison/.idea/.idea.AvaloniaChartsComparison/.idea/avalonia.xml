@@ -8,6 +8,7 @@
         <entry key="AvaloniaChartsComparison/Views/MainWindow.axaml" value="AvaloniaChartsComparison/AvaloniaChartsComparison.csproj" />
         <entry key="AvaloniaChartsComparison/Views/MicrochartsView.axaml" value="AvaloniaChartsComparison/AvaloniaChartsComparison.csproj" />
         <entry key="AvaloniaChartsComparison/Views/OxyPlotView.axaml" value="AvaloniaChartsComparison/AvaloniaChartsComparison.csproj" />
+        <entry key="AvaloniaChartsComparison/Views/ScottPlotView.axaml" value="AvaloniaChartsComparison/AvaloniaChartsComparison.csproj" />
       </map>
     </option>
   </component>

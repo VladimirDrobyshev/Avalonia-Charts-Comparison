@@ -1,5 +1,16 @@
 ﻿<UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:ScottPlot="clr-namespace:ScottPlot.Avalonia;assembly=ScottPlot.Avalonia"
              x:Class="AvaloniaChartsComparison.Views.ScottPlotView">
-    ScottPlot
+    <TabControl>
+        <TabItem Header="Large Points Count">
+            <ScottPlot:AvaPlot x:Name="LargeSeriesChart" />
+        </TabItem>
+        <TabItem Header="Large Series Count">
+            <ScottPlot:AvaPlot x:Name="SmallSeriesChart" />
+        </TabItem>
+        <TabItem Header="Polar">
+            <ScottPlot:AvaPlot x:Name="PolarSeriesChart" />
+        </TabItem>
+    </TabControl>
 </UserControl>
