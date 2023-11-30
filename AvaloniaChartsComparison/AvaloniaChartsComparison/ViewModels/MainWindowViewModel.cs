@@ -13,6 +13,7 @@ public partial class MainWindowViewModel : ViewModelBase
     private readonly Lazy<MicrochartsViewModel> microchartsViewModel = new (() => new MicrochartsViewModel(dataGenerator));
     private readonly Lazy<OxyPlotViewModel> oxyPlotViewModel = new (() => new OxyPlotViewModel(dataGenerator));
     private readonly Lazy<ScottPlotViewModel> scottPlotViewModel = new (() => new ScottPlotViewModel(dataGenerator));
+    private readonly Lazy<TeeChartViewModel> teeChartViewModel = new (() => new TeeChartViewModel(dataGenerator));
     
     [ObservableProperty]
     private ChartViewModelBase chartView;
@@ -25,4 +26,6 @@ public partial class MainWindowViewModel : ViewModelBase
     void OxyPlot() => ChartView = oxyPlotViewModel.Value;
     [RelayCommand]
     void ScottPlot() => ChartView = scottPlotViewModel.Value;
+    [RelayCommand]
+    void TeeChart() => ChartView = teeChartViewModel.Value;
 }

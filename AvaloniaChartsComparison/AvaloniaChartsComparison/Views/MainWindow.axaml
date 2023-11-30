@@ -21,6 +21,7 @@
             <RadioButton Margin="8" Content="Microcharts" Command="{Binding MicrochartsCommand}" />
             <RadioButton Margin="8" Content="OxyPlot" Command="{Binding OxyPlotCommand}" />
             <RadioButton Margin="8" Content="ScottPlot" Command="{Binding ScottPlotCommand}" />
+            <RadioButton Margin="8" Content="TeeChart" Command="{Binding TeeChartCommand}" />
         </StackPanel>
     </Grid>
 

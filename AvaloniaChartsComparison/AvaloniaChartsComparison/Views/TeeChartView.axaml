@@ -1,0 +1,23 @@
+﻿<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:teechart="clr-namespace:TeeChart.Xaml.Avalonia;assembly=TeeChart.Xaml.Avalonia"
+             xmlns:series="clr-namespace:TeeChart.Xaml.Avalonia.Series;assembly=TeeChart.Xaml.Avalonia"
+             xmlns:vm="using:AvaloniaChartsComparison.ViewModels"
+             x:Class="AvaloniaChartsComparison.Views.TeeChartView"
+             x:DataType="vm:TeeChartViewModel">
+    <TabControl>
+        <TabItem Header="1K">
+            <teechart:TChart >
+                <series:Line ItemsSource="{Binding SmallSeries}" XPath="X" YPath="Y" />
+            </teechart:TChart>
+        </TabItem>
+        <TabItem Header="100K">
+            <teechart:TChart >
+                <series:Line ItemsSource="{Binding LargeSeries}" XPath="X" YPath="Y" />
+            </teechart:TChart>
+        </TabItem>
+        <!-- <TabItem Header="Polar"> -->
+        <!--     <teechart:TChart Series="{Binding PolarSeries}" /> -->
+        <!-- </TabItem> -->
+    </TabControl>
+</UserControl>

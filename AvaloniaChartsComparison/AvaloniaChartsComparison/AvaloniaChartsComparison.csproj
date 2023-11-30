@@ -25,6 +25,7 @@
         <PackageReference Include="LiveChartsCore.SkiaSharpView.Avalonia" Version="2.0.0-rc2" />
         <PackageReference Include="OxyPlot.Avalonia" Version="2.1.0-Avalonia11" />
         <PackageReference Include="ScottPlot.Avalonia" Version="5.0.9-beta" />
+        <PackageReference Include="Steema.TeeChart.NET.Avalonia" Version="5.2023.10.27" />
     </ItemGroup>
 
 
