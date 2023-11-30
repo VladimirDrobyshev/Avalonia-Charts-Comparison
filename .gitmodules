@@ -1,0 +1,3 @@
+[submodule "Microcharts"]
+	path = Microcharts
+	url = git@github.com:AvaloniaCommunity/Avalonia.Microcharts.git
